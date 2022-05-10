@@ -2,7 +2,7 @@
 #This program creates a dictionary for characters, locations, and inventory items
 
 print("Locations:")                                                  #prints "Locations:"
-locations = {                                                        #creates the locations dictionary 
+locations = {                                                        #creates the "locations" dictionary 
     "Your house": "is where you live alone",                         #adds "Your house" to the dictionary 
     "Linda's house": "is across the street from your house",         #adds "Linda's house" to the dictionary 
     "The park": "is usually very busy",                              #adds "The park" to the dictionary 
