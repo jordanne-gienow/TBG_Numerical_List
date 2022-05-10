@@ -65,7 +65,7 @@ inventory_description = inventory["car"]                             #creates a 
 print(f"Your your car is {inventory_description}.")                  #prints "Your car is used to drive around"
 
 inventory_description = inventory["backpack"]                        #creates a variable for "backpack"
-print(f"Your your backpack {inventory_description}.")                
+print(f"Your your backpack {inventory_description}.")                #prints "Your backpack holds all of your stuff"
 
 
 
