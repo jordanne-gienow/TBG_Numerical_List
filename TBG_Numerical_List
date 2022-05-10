@@ -1,0 +1,73 @@
+#RPG Nested Dictionaries - Jordanne Gienow
+#This program creates a dictionary for characters, locations, and inventory items
+
+print("Locations:")                                                  #prints "Locations:"
+locations = {                                                        #creates the locations dictionary 
+    "Your house": "is where you live alone",                         #adds "Your house" to the dictionary 
+    "Linda's house": "is across the street from your house",         #adds "Linda's house" to the dictionary 
+    "The park": "is usually very busy",                              #adds "The park" to the dictionary 
+    "Your parents' house": "is on a farm",                           #adds "Your parents' house" to the dictionary
+    }
+    
+location_description = locations["Your house"]                       #creates a variable for the value of "Your house"
+print(f"Your house {location_description}.")                         #prints "Your house is where you live alone."
+
+location_description = locations["Linda's house"]                    #changes the value of location_description to Linda's house  
+print(f"Linda's house {location_description}.")                      #prints "Linda's house is across the street from your house."
+
+location_description = locations["The park"]                         #changes the value of location_description to The park
+print(f"The park {location_description}.")                           #prints "The park is usually very busy."
+
+location_description = locations["Your parents' house"]              #changes the value of location_description to Your parent's house
+print(f"Your parents' house {location_description}.")                #prints "Your parents' house is on a farm."
+
+
+print("\nCharacters:")                                               #prints "Characters:"
+characters = {                                                       #creates the main dictionary called "characters"
+    "You" : {                                                        #creates the nested dictionary, "You"
+        "live" : "live alone",                                       #adds "live" to the "You" dictionary 
+        "who" : "are the main character"                             #adds "who" to the "You" dictionary 
+    },                                                               #closes the "You" dictionary 
+    "Linda" : {                                                      #creates the nested dictionary, "Linda"
+        "live" : "live across the street from you",                  #adds "live" to the "Linda" dictionary 
+        "who" : "is a friend of yours"                               #adds "who" to the "Linda" dictionary 
+    },                                                               #closes the "Linda" dictionary 
+    "Your mom" : {                                                   #creates the "Your mom" dictionary 
+        "live" : "lives on a farm",                                  #adds "live" to the "Your mom" dictionary
+        "who" : "is married to your father"                          #adds "who" to the "Your mom" dictionary 
+    },                                                               #closes the "Your mom" dictionary 
+    "Your dad" : {                                                   #creates the "Your dad" dictionary 
+        "live" : "lives on a farm",                                  #adds "live" to the "Your dad" dictionary 
+        "who" : "is married to your mother"                          #adds "who" to the "Your dad" dictionary 
+    },                                                               #closes the "Your dad" dictionary 
+    "Robert and Anna" : {                                            #creates the "Robert and Anna" dictionary 
+        "live" : "live near your parents",                           #adds "live" to the "Robert and Anna" dictionary 
+        "who" : "are family friends"                                 #adds "who" to to the "Robert and Anna" dictionary 
+    },                                                               #closes the "Robert and Anna" dictionary
+}                                                                    #closes the whole "characters" dictionary 
+
+for character, character_info in characters.items():                 #creates a loop for the character dictionary 
+    lives = character_info['live']                                   #creates a variable for the "live" values of the dictionary
+    who = character_info['who']                                      #creates a variable for the "who" values of the dictionary 
+    print(f"{character} {lives}. \n{character} {who}.")              #prints a "live " and "who" statement for each character 
+
+print("\nInventory:")                                                #prints "Inventory:"
+inventory = {                                                        #creates the "inventory" dictionary 
+    "cellphone" : "used to talk to family and friends",              #adds "cellphone" to the "inventory" dictionary 
+    "car" : "used to drive around",                                  #adds "car" to the "inventory" dictionary 
+    "backpack" : "holds all of your stuff"                           #adds "backpack" to the "inventory" dictionary 
+    }                                                                #closes the "inventory" dictionary 
+
+inventory_description = inventory["cellphone"]                       #creates a variable for "cellphone"
+print(f"Your your cellphone is {inventory_description}.")            #prints "Your cellphone is used to talk to family and friends
+
+inventory_description = inventory["car"]                             #creates a variable for "car"
+print(f"Your your car is {inventory_description}.")                  #prints "Your car is used to drive around"
+
+inventory_description = inventory["backpack"]                        #creates a variable for "backpack"
+print(f"Your your backpack {inventory_description}.")                #prints "Your backpack holds all of your stuff"
+
+
+
+
+    
